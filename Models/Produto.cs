@@ -1,4 +1,4 @@
-namespace Produto.Models;
+namespace csharp.Models;
 
 public class Produto{
     public int Id { get; set; }
