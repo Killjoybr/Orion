@@ -3,7 +3,11 @@ using csharp.Models;
 namespace csharp.Services;
 
 public static class ProdutoService {
-    private static List<Produto> Produtos { get; }
+    private static List<Produto>Produtos { get; }
+
+    static ProdutoService(){
+        Produtos = [];
+    }
     private static int id = 1;
     
     public static List<Produto> GetAll() => Produtos;
