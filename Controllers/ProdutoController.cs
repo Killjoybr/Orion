@@ -28,7 +28,7 @@ public class ProdutoController : ControllerBase{
     public IActionResult Create(Produto produto){
         ProdutoService.Add(produto);
         
-        return CreatedAtAction(nameof(Get), new { id = produto.Id, produto});
+        return CreatedAtAction(nameof(Get), new { id = produto.Id}, produto);
     }
 
     [HttpPut]
